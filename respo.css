@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 25vw auto;
+    grid-gap: 10px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Stacks columns on smaller screens */
+    }
+
+    #box-1 {
+        grid-row-end: 2;
+    }
+}
+
+.grid-item {
+    padding: 30px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#box-1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-left: 20px;
+}
+
+#box-2,
+#box-3 {
+    margin-right: 20px;
+}
+
+/* Skill Section */
+.skiil-description p {
+    line-height: 40px;
+}
+
+.skiil-description span {
+    margin-left: 10px;
+}
+
+.skill-section,
+.language-section {
+    margin: 20px 0;
+}
+
+.language-section {
+    margin-top: 80px;
+}
+
+/* Experience Sections */
+.work-xperience,
+.work-developer,
+.work-designer,
+.education-experience,
+.education-master,
+.education-school {
+    color: #757575;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+.work-xperience h3,
+.work-developer h3,
+.work-designer h3,
+.education-experience h3,
+.education-master h3,
+.education-school h3 {
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.work-xperience h4,
+.work-developer h4,
+.work-designer h4,
+.education-experience h4,
+.education-master h4,
+.education-school h4 {
+    color: #009688;
+    padding: 10px;
+}
+
+.work-xperience span,
+.work-developer span,
+.work-designer span {
+    background-color: #009688;
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px 20px;
+    box-shadow: 5px 10px 18px #888888;
+    text-align: center;
+    line-height: 30px;
+}
